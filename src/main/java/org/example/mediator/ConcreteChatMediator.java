@@ -16,7 +16,7 @@ public class ConcreteChatMediator implements ChatMediator {
         }
         // Deliver the message back to the sender
         if (clients.containsKey(sender)) {
-            clients.get(sender).receiveMessage("You -> "+ receiver, message);
+            clients.get(sender).receiveMessage("To "+ receiver, message);
         }
     }
 
